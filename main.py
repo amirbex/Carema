@@ -19,6 +19,10 @@ genai.configure(api_key=GEMINI_API_KEY)
 bot = Bot(token=TOKEN, parse_mode=ParseMode.HTML)
 dp = Dispatcher()
 
+from keep_alive import keep_alive
+
+keep_alive()
+
 # کیبورد منو
 menu_keyboard = ReplyKeyboardMarkup(
     keyboard=[
